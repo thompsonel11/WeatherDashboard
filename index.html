@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+
+<body class="min-100-vh flex-column">
+  <header class="p-5 text-center text-white gradient-custom">
+    <h1>Weather Dashboard</h1>
+  </header>
+  <main>
+    <section class="d-flex row mt-5">
+      <div id="search" class="col-xl-3 mx-4 my-2 ui-widget pb-3">
+        <input id="tags" class="col my-3" placeholder="Enter city"></input>
+        <button class="btn btn-primary col mb-2" id="submitBtn">Search</button>
+        <p class="border-bottom border-dark my-3"></p>
+        <div class='search-block'></div>
+      </div>
+      <div id="forecast" class="col-xl-8 m-1" hidden>
+        <div class="row mx-1 border border-dark border-custom p-3 pt-1">
+          <div class="dateAndCityCurrent col-12 h3 font-weight-bold">City, date </div>
+          <div class="col-12 pb-2">Temp: <span class="tempCurrent "></span></div>
+          <div class="col-12 pb-2">Wind: <span class="windCurrent"></span></div>
+          <div class="col-12 pb-2">Humidity: <span class="humidityCurrent "></span></div>
+          <div class="col-12 pb-2">UV Index: <span class="uvIndexCurrent"></span></div>
+        </div>
+        <div class="d-flex row forecast my-3">
+          <h2 class="col-md-12 mb-5"> 5-Day Forecast: </h2>
+          <div class="d-flex row col-md-12 pl-5">
+
+            <div class="col-xl col-lg-3 col-md-5 col-sm-4 border border-dark mx-2 forecast-bg text-white mb-4">
+              <div class="date h5">DATE</div>
+              <img class='icon'>
+              <div class="pb-2">Temp: <span class="temp"></span></div>
+              <div class="pb-2">Wind: <span class="wind"></span></div>
+              <div class="pb-2">Humidity: <span class="humidity"></span></div>
+            </div>
+            <div class="col-xl col-lg-3 col-md-5 col-sm-4 border border-dark mx-2 forecast-bg text-white mb-4">
+              <div class="date h5">DATE</div>
+              <img class='icon'>
+              <div class="pb-2">Temp: <span class="temp"></span></div>
+              <div class="pb-2">Wind: <span class="wind"></span></div>
+              <div class="pb-2">Humidity: <span class="humidity"></span></div>
+            </div>
+            <div class="col-xl col-lg-3 col-md-5 col-sm-4 border border-dark mx-2 forecast-bg text-white mb-4">
+              <div class="date h5">DATE</div>
+              <img class='icon'>
+              <div class="pb-2">Temp: <span class="temp"></span></div>
+              <div class="pb-2">Wind: <span class="wind"></span></div>
+              <div class="pb-2">Humidity: <span class="humidity"></span></div>
+            </div>
+            <div class="col-xl col-lg-3 col-md-5 col-sm-4 border border-dark mx-2 forecast-bg text-white mb-4">
+              <div class="date h5">DATE</div>
+              <img class='icon'>
+              <div class="pb-2">Temp: <span class="temp"></span></div>
+              <div class="pb-2">Wind: <span class="wind"></span></div>
+              <div class="pb-2">Humidity: <span class="humidity"></span></div>
+            </div>
+            <div class="col-xl col-lg-3 col-md-5 col-sm-4 border border-dark mx-2 forecast-bg text-white mb-4">
+              <div class="date h5">DATE</div>
+              <img class='icon'>
+              <div class="pb-2">Temp: <span class="temp"></span></div>
+              <div class="pb-2">Wind: <span class="wind"></span></div>
+              <div class="pb-2">Humidity: <span class="humidity"></span></div>
+            </div>
+          </div>
+          </div>
+      </div>
+    </section>
+
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+    integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+    crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
